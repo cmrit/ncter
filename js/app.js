@@ -18,15 +18,13 @@ $(document).ready(function(){
 
 	$(window).on("scroll", function(){
 		var position = $(document).scrollTop();
-		var menu_pos = $("#above-menu-bar").offset().top;
+		var menu_pos = $("#timer").offset().top;
 		var class_name = "fixed contain-to-grid";
-		console.log(position);
-		console.log(menu_pos);
-		if(position >= menu_pos * 2){
+		if(position >= menu_pos){
 			$("#menu-bar").addClass(class_name);
 			toggle_site_name("block");
 		}
-		if(position < menu_pos * 2){
+		if(position < menu_pos){
 			$("#menu-bar").removeClass(class_name);
 			toggle_site_name("none");
 		}
