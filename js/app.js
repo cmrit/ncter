@@ -20,8 +20,6 @@ $(document).ready(function(){
 		var position = $(document).scrollTop();
 		var menu_pos = $("#timer").offset().top;
 		var class_name = "fixed contain-to-grid";
-		console.log(position);
-		console.log(menu_pos);
 		if(position >= menu_pos){
 			$("#menu-bar").addClass(class_name);
 			toggle_site_name("block");
